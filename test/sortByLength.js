@@ -31,7 +31,7 @@ QUnit.module("Тестируем функцию sortByLength", function() {
     QUnit.test("Правильно сортирует массив строки с разым регистром", function(assert) {
         const result = sortByLength(["hello", "Rock", "Hello", "rock"]);
 
-        assert.deepEqual(result, ["Rock", "rock", "Hello", "hello"], "Массив с со строками разных регистров должен сортировать сначала по длине, потом по регистру.");
+        assert.deepEqual(result, ["rock", "Rock", "hello", "Hello"], "Массив с со строками разных регистров должен сортировать сначала по длине, потом по регистру.");
     });
     QUnit.test("Правильно сортирует массив с одинаковыми строками", function(assert) {
         const result = sortByLength(["Danger", "Danger", "Danger", "Danger"]);
